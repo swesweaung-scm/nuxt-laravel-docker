@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\QuizController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,10 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::prefix('v1')->group(function () {
-    Route::get('/test', function () {
-        return response()->json([
-            'name' => 'Swe Swe',
-            'email' => 'scm.swesweaung@gmail.com'
-        ]);
-    });
+    Route::get('/quiz',[QuizController::class, 'index']);
+    Route::post('/quiz',[QuizController::class, 'store']);
 });

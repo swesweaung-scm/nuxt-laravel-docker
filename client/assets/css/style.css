@@ -1,0 +1,31 @@
+.main {
+  height: 100vh;
+}
+
+.b-color {
+  background: #dfdfe8;
+}
+
+.footer {
+  position: fixed;
+  height: 54px;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background: #dfdfe8;
+  align-items: center;
+  justify-content: end;
+  padding-right: 50px;
+}
+
+.next-route,
+.next-btn a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.ans-count {
+  padding-right: 50%;
+  font-size: large;
+}
